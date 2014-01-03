@@ -1,0 +1,5 @@
+logstash (1.3.2-1) unreleased; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Thu, 02 Jan 2014 14:08:13 +0100

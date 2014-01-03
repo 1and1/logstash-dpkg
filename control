@@ -1,0 +1,15 @@
+Source: logstash
+Section: web
+Priority: optional
+Maintainer: Andreas Wirooks <andreas.wirooks@1und1.de>
+Build-Depends: debhelper (>= 8.0.0), quilt, openjdk-7-jdk, make, libmysqlclient-dev, curl, git, rsync, ruby1.9.3, ruby1.9.1-dev, gcc
+Standards-Version: 3.9.3
+Homepage: http://logstash.net
+#Vcs-Git: git://git.debian.org/collab-maint/logstash.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/logstash.git;a=summary
+
+Package: logstash
+Architecture: any
+Depends: ${misc:Depends}, adduser, openjdk-7-jre-headless | openjdk-7-jre
+Description: logstash is a tool for managing events and logs
+ logstash is a tool for managing events and logs

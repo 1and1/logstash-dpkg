@@ -1,0 +1,9 @@
+Description: change directory of resulting jar
+ change directory of resulting jar
+Author: Andreas Wirooks <andreas.wirooks@1und1.de>
+
+--- logstash-1.3.2.orig/pkg/debian/debian/logstash.install
++++ logstash-1.3.2/pkg/debian/debian/logstash.install
+@@ -1 +1 @@
+-logstash.jar usr/share/logstash
++build/logstash.jar usr/share/logstash

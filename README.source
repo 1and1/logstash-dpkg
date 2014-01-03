@@ -1,0 +1,4 @@
+logstash for Debian
+-------------------
+
+There are some Debian files already in the pkg debian subdierctory but they are under gpl and not apache.
