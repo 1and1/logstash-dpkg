@@ -1,0 +1,26 @@
+Description: change path from opt to usr/share
+ change path from opt to usr/share
+Author: Andreas Wirooks <andreas.wirooks@1und1.de>
+
+--- logstash-1.3.2.orig/pkg/logstash-web.default
++++ logstash-1.3.2/pkg/logstash-web.default
+@@ -18,7 +18,7 @@ PIDFILE=/var/run/logstash-web.pid
+ LS_USER=logstash
+ 
+ # location of the logstas jar file
+-LS_JAR=/opt/logstash/logstash.jar
++LS_JAR=/usr/share/logstash/logstash.jar
+ 
+ # logstash home location
+ LS_HOME=/var/lib/logstash
+--- logstash-1.3.2.orig/pkg/logstash.default
++++ logstash-1.3.2/pkg/logstash.default
+@@ -18,7 +18,7 @@ PIDFILE=/var/run/logstash.pid
+ LS_USER=logstash
+ 
+ # location of the logstas jar file
+-LS_JAR=/opt/logstash/logstash.jar
++LS_JAR=/usr/share/logstash/logstash.jar
+ 
+ # logstash home location
+ LS_HOME=/var/lib/logstash

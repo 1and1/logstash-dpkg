@@ -1,9 +1,13 @@
-Description: change directory of resulting jar
- change directory of resulting jar
+Description: installfilesbyhand.patch
+ install files by hand
 Author: Andreas Wirooks <andreas.wirooks@1und1.de>
 
 --- logstash-1.3.2.orig/pkg/debian/debian/logstash.install
 +++ logstash-1.3.2/pkg/debian/debian/logstash.install
-@@ -1 +1 @@
+@@ -1 +1,5 @@
 -logstash.jar usr/share/logstash
 +build/logstash.jar usr/share/logstash
++build/default/logstash /etc/default
++build/default/logstash-web /etc/default
++build/init.d/logstash /etc/init.d
++build/init.d/logstash-web /etc/init.d
