@@ -3,11 +3,12 @@ Upstream-Name: logstash
 Source: http://logstash.net
 
 Files: *
-Copyright: 2009-2013 Jordan Sissel, Pete Fritchman, and contributors.
+Copyright: 2009-2013 Jordan Sissel, Pete Fritchman, and contributors
 License: Apache-2.0
 
 Files: pkg/debian/*
-Copyright: 2013 Corey Quinn <corey@sequestered.net>.
+Copyright: 2013 Corey Quinn <corey@sequestered.net>
+License: Apache-2.0
 
 Files: debian/*
 Copyright: 2013 Andreas Wirooks <andreas.wirooks@1und1.de>

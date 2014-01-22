@@ -1,6 +1,21 @@
-logstash (1.3.2-2) unreleased; urgency=low
+logstash (1.3.2-4) wheezy; urgency=low
 
-  * Added dependancies for oracle java
+  * Changed distribution to wheezy
+  * Removed dependency to build essential package make and gcc for lintian
+  * Added a lintian override for the /var/logstash directory
+  * Added a lintian override for the /var/run/logstash directory and added
+    a patch to create it at service start because /var/run is a tmpfs and
+    a directory created during installation will be deleted at reboot
+  * Corrected copyright file field
+  * At the moment both services are not registered or started and two lintian
+    overrides are added for this
+  * Renamed elasticsearch patch according to the used version
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Wed, 22 Jan 2014 11:44:44 +0100
+
+logstash (1.3.2-3) unreleased; urgency=low
+
+  * Added dependencies for oracle java
 
  -- Andreas Wirooks <andreas.wirooks@1und1.de>  Fri, 17 Jan 2014 14:44:44 +0100
 
@@ -12,6 +27,6 @@ logstash (1.3.2-2) unreleased; urgency=low
 
 logstash (1.3.2-1) unreleased; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release
 
  -- Andreas Wirooks <andreas.wirooks@1und1.de>  Thu, 02 Jan 2014 14:08:13 +0100
