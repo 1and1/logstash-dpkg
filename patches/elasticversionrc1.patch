@@ -2,8 +2,8 @@ Description: Raise elasticsearch version to 1.0.2.RC1
  Raise elasticsearch version to 1.0.2.RC1
 Author: Andreas Wirooks <andreas.wirooks@1und1.de>
 
---- logstash-1.3.2.orig/Makefile
-+++ logstash-1.3.2/Makefile
+--- a/Makefile
++++ b/Makefile
 @@ -3,7 +3,7 @@
  #   wget or curl
  #

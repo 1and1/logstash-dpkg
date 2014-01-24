@@ -14,7 +14,7 @@
 
 override_dh_auto_build:
 	make flatjar
-	mv build/logstash-1.3.2-modified-flatjar.jar build/logstash.jar
+	mv build/logstash-1.3.3-modified-flatjar.jar build/logstash.jar
 	mkdir build/default
 	mkdir build/init.d
 	cp pkg/logstash.default         build/default/logstash
