@@ -4,7 +4,7 @@ Author: Andreas Wirooks <andreas.wirooks@1und1.de>
 
 --- a/pkg/logstash-web.default
 +++ b/pkg/logstash-web.default
-@@ -18,7 +18,7 @@
+@@ -15,7 +15,7 @@
  LS_USER=logstash
  
  # location of the logstas jar file
@@ -15,7 +15,7 @@ Author: Andreas Wirooks <andreas.wirooks@1und1.de>
  LS_HOME=/var/lib/logstash
 --- a/pkg/logstash.default
 +++ b/pkg/logstash.default
-@@ -18,7 +18,7 @@
+@@ -15,7 +15,7 @@
  LS_USER=logstash
  
  # location of the logstas jar file
