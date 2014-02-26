@@ -1,0 +1,11 @@
+--- a/Makefile
++++ b/Makefile
+@@ -3,7 +3,7 @@
+ #   wget or curl
+ #
+ JRUBY_VERSION=1.7.10
+-ELASTICSEARCH_VERSION=1.0.0
++ELASTICSEARCH_VERSION=1.0.1
+ 
+ WITH_JRUBY=java -jar $(shell pwd)/$(JRUBY) -S
+ JRUBY=vendor/jar/jruby-complete-$(JRUBY_VERSION).jar

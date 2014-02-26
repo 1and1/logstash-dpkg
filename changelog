@@ -1,3 +1,10 @@
+logstash (1.4.0.beta1-2) wheezy; urgency=low
+
+  * Added missing path patch for opt
+  * Updated integrated elasticsearch to 1.0.1
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Wed, 26 Feb 2014 11:44:03 +0100
+
 logstash (1.4.0.beta1-1) wheezy; urgency=low
 
   * Updated to logstash 1.4.0.beta1
