@@ -3,3 +3,4 @@ changepathfromopttousrshare.patch
 installfilesbyhand.patch
 initscript-no-opt.patch
 integratedelasticsearch.patch
+removevarrundir.patch
