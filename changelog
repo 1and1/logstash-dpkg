@@ -1,3 +1,15 @@
+logstash (1.4.1-1) wheezy; urgency=low
+
+  * Updated to 1.4.1 which has no flat jar anymore with a lot of changes
+  * Deleted all old patches and started a bunch of new ones because of changes
+  * Updated integrated elastic search to 1.2.1
+  * Updated integrated kibana to 3.1.0
+  * Updated integrated jruby to 1.7.12
+  * Updated integrated collectd to 4.5.1
+  * WARNING: Does not work with pbuilder yet
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Wed, 04 Jun 2014 10:36:01 +0200
+
 logstash (1.4.0.beta1-2) wheezy; urgency=low
 
   * Added missing path patch for opt

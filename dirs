@@ -1,1 +1,3 @@
-../pkg/debian/debian/dirs
+etc/logstash/conf.d
+var/lib/logstash
+var/log/logstash

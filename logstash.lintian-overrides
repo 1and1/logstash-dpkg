@@ -1,3 +1,2 @@
-logstash: non-standard-dir-in-var var/logstash/
 logstash: script-in-etc-init.d-not-registered-via-update-rc.d etc/init.d/logstash
 logstash: script-in-etc-init.d-not-registered-via-update-rc.d etc/init.d/logstash-web

@@ -1,6 +1,4 @@
-configurationdirectory.patch
-changepathfromopttousrshare.patch
-installfilesbyhand.patch
-initscript-no-opt.patch
-integratedelasticsearch.patch
-removevarrundir.patch
+update-internal-dependencies.patch
+init-scripts-opt-to-usr.patch
+debian-scripts-opt-to-usr.patch
+s3-opt-to-usr.patch

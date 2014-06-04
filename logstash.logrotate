@@ -1,1 +1,1 @@
-../pkg/debian/debian/logstash.logrotate
+../pkg/logrotate.conf

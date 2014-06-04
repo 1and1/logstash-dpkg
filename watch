@@ -7,4 +7,4 @@
 version=3
 
 # Uncomment to examine a Webserver directory
-https://github.com/logstash/logstash/archive/v(.*)\.tar\.gz
+https://github.com/elasticsearch/logstash/archive/v(.*)\.tar\.gz

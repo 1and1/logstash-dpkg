@@ -1,0 +1,22 @@
+--- a/pkg/logstash-web.sysv.debian
++++ b/pkg/logstash-web.sysv.debian
+@@ -55,7 +55,7 @@
+ # Define other required variables
+ [ -n "${LS_LOG_FILE}" ] && LS_OPTS="${LSOPTS} -l ${LS_LOG_FILE}"
+ PID_FILE=${LS_PIDFILE}
+-DAEMON=/opt/logstash/bin/logstash
++DAEMON=/usr/share/logstash/bin/logstash
+ DAEMON_OPTS="web ${LS_OPTS}"
+ 
+ # Check DAEMON exists
+--- a/pkg/logstash.sysv.debian
++++ b/pkg/logstash.sysv.debian
+@@ -54,7 +54,7 @@
+ 
+ # Define other required variables
+ PID_FILE=${LS_PIDFILE}
+-DAEMON=/opt/logstash/bin/logstash
++DAEMON=/usr/share/logstash/bin/logstash
+ DAEMON_OPTS="agent -f ${LS_CONF_DIR} -l ${LS_LOG_FILE} ${LS_OPTS}"
+ 
+ # Check DAEMON exists

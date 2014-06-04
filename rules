@@ -13,8 +13,7 @@
 	dh $@ --with quilt
 
 override_dh_auto_build:
-	make flatjar
-	cp build/logstash-1.4.0.beta1-modified-flatjar.jar build/logstash.jar
+	make tarball
 	mkdir build/default
 	mkdir build/init.d
 	cp pkg/logstash.default         build/default/logstash
@@ -22,12 +21,8 @@ override_dh_auto_build:
 	cp pkg/logstash.sysv.debian     build/init.d/logstash
 	cp pkg/logstash-web.sysv.debian build/init.d/logstash-web
 
-override_dh_auto_test:
-	#flatjar-tests are instable at the moment
-	#make flatjar-test
-
 override_dh_auto_clean:
 	make clean
+	rm -fr build
 	rm -fr tools/.bundle
 	rm -fr vendor
-	rm -fr build/logstash*jar

@@ -1,0 +1,9 @@
+--- a/pkg/debian/after-install.sh
++++ b/pkg/debian/after-install.sh
+@@ -1,5 +1,5 @@
+ #!/bin/sh
+ 
+-chown -R logstash:logstash /opt/logstash
++chown -R logstash:logstash /usr/share/logstash
+ chown logstash /var/log/logstash
+ chown logstash:logstash /var/lib/logstash

@@ -1,1 +1,11 @@
-../pkg/debian/debian/logstash.install
+build/tarball/logstash-1.4.1-modified/bin /usr/share/logstash
+build/tarball/logstash-1.4.1-modified/lib /usr/share/logstash
+build/tarball/logstash-1.4.1-modified/locales /usr/share/logstash
+build/tarball/logstash-1.4.1-modified/patterns /usr/share/logstash
+build/tarball/logstash-1.4.1-modified/spec /usr/share/logstash
+build/tarball/logstash-1.4.1-modified/vendor /usr/share/logstash
+
+build/default/logstash /etc/default
+build/default/logstash-web /etc/default
+build/init.d/logstash /etc/init.d
+build/init.d/logstash-web /etc/init.d

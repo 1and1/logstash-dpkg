@@ -1,1 +1,1 @@
-../pkg/debian/debian/logstash.postinst
+../pkg/debian/after-install.sh
