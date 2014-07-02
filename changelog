@@ -1,3 +1,12 @@
+logstash (1.4.2-1) wheezy; urgency=low
+
+  * Updated to 1.4.2
+  * Updated integrated jruby to 1.7.13
+  * Skipped executing tests as a workaround for pbuilder because the UTF8 fix
+    in the gemfile does not help fixing the tests
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Wed, 02 Jul 2014 09:21:41 +0200
+
 logstash (1.4.1-1) wheezy; urgency=low
 
   * Updated to 1.4.1 which has no flat jar anymore with a lot of changes

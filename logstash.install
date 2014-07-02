@@ -1,9 +1,9 @@
-build/tarball/logstash-1.4.1-modified/bin /usr/share/logstash
-build/tarball/logstash-1.4.1-modified/lib /usr/share/logstash
-build/tarball/logstash-1.4.1-modified/locales /usr/share/logstash
-build/tarball/logstash-1.4.1-modified/patterns /usr/share/logstash
-build/tarball/logstash-1.4.1-modified/spec /usr/share/logstash
-build/tarball/logstash-1.4.1-modified/vendor /usr/share/logstash
+build/tarball/logstash-1.4.2-modified/bin /usr/share/logstash
+build/tarball/logstash-1.4.2-modified/lib /usr/share/logstash
+build/tarball/logstash-1.4.2-modified/locales /usr/share/logstash
+build/tarball/logstash-1.4.2-modified/patterns /usr/share/logstash
+build/tarball/logstash-1.4.2-modified/spec /usr/share/logstash
+build/tarball/logstash-1.4.2-modified/vendor /usr/share/logstash
 
 build/default/logstash /etc/default
 build/default/logstash-web /etc/default

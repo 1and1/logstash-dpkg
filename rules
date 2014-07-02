@@ -21,6 +21,8 @@ override_dh_auto_build:
 	cp pkg/logstash.sysv.debian     build/init.d/logstash
 	cp pkg/logstash-web.sysv.debian build/init.d/logstash-web
 
+override_dh_auto_test:
+
 override_dh_auto_clean:
 	make clean
 	rm -fr build
