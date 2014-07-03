@@ -1,0 +1,62 @@
+Index: logstash/pkg/logstash-web.sysv.debian
+===================================================================
+--- logstash.orig/pkg/logstash-web.sysv.debian	2014-06-06 15:36:24.861994296 +0200
++++ logstash/pkg/logstash-web.sysv.debian	2014-06-06 15:38:04.216516774 +0200
+@@ -80,7 +80,7 @@
+       log_daemon_msg "Starting $DESC"
+ 
+       # Parse the actual JAVACMD from the process' environment, we don't care about errors.
+-      JAVA=$(cat /proc/$(cat ${PID_FILE} 2>/dev/null)/environ 2>/dev/null | awk -F= 'BEGIN {RS="\0"} /JAVACMD/ {print $2}')
++      JAVA=$(which java)
+       if start-stop-daemon --test --start --pidfile "$PID_FILE" \
+          --user "$LS_USER" --exec "$JAVA" \
+       >/dev/null; then
+@@ -99,7 +99,7 @@
+          sleep 1
+ 
+          # Parse the actual JAVACMD from the process' environment, we don't care about errors.
+-         JAVA=$(cat /proc/$(cat ${PID_FILE} 2>/dev/null)/environ 2>/dev/null | awk -F= 'BEGIN {RS="\0"} /JAVACMD/ {print $2}')
++         JAVA=$(which java)
+          if start-stop-daemon --test --start --pidfile "$PID_FILE" \
+              --user "$LS_USER" --exec "$JAVA" \
+          >/dev/null; then
+@@ -147,7 +147,7 @@
+       set +e
+ 
+       # Parse the actual JAVACMD from the process' environment, we don't care about errors.
+-      JAVA=$(cat /proc/$(cat ${PID_FILE} 2>/dev/null)/environ 2>/dev/null | awk -F= 'BEGIN {RS="\0"} /JAVACMD/ {print $2}')
++      JAVA=$(which java)
+       start-stop-daemon --test --start --pidfile "$PID_FILE" \
+          --user "$LS_USER" --exec "$JAVA" \
+       >/dev/null 2>&1
+Index: logstash/pkg/logstash.sysv.debian
+===================================================================
+--- logstash.orig/pkg/logstash.sysv.debian	2014-06-06 15:36:24.845993906 +0200
++++ logstash/pkg/logstash.sysv.debian	2014-06-06 15:38:33.769265824 +0200
+@@ -79,7 +79,7 @@
+       log_daemon_msg "Starting $DESC"
+ 
+       # Parse the actual JAVACMD from the process' environment, we don't care about errors.
+-      JAVA=$(cat /proc/$(cat "${PID_FILE}" 2>/dev/null)/environ 2>/dev/null | grep -z ^JAVACMD= | cut -d= -f2)
++      JAVA=$(which java)
+       if start-stop-daemon --test --start --pidfile "$PID_FILE" \
+          --user "$LS_USER" --exec "$JAVA" \
+       >/dev/null; then
+@@ -98,7 +98,7 @@
+          sleep 1
+ 
+          # Parse the actual JAVACMD from the process' environment, we don't care about errors.
+-         JAVA=$(cat /proc/$(cat "${PID_FILE}" 2>/dev/null)/environ 2>/dev/null | grep -z ^JAVACMD= | cut -d= -f2)
++         JAVA=$(which java)
+          if start-stop-daemon --test --start --pidfile "$PID_FILE" \
+              --user "$LS_USER" --exec "$JAVA" \
+          >/dev/null; then
+@@ -146,7 +146,7 @@
+       set +e
+ 
+       # Parse the actual JAVACMD from the process' environment, we don't care about errors.
+-      JAVA=$(cat /proc/$(cat "${PID_FILE}" 2>/dev/null)/environ 2>/dev/null | grep -z ^JAVACMD= | cut -d= -f2)
++      JAVA=$(which java)
+       start-stop-daemon --test --start --pidfile "$PID_FILE" \
+          --user "$LS_USER" --exec "$JAVA" \
+       >/dev/null 2>&1

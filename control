@@ -2,7 +2,7 @@ Source: logstash
 Section: web
 Priority: optional
 Maintainer: Andreas Wirooks <andreas.wirooks@1und1.de>
-Build-Depends: debhelper (>= 8.0.0), quilt, oracle-java7-jdk | openjdk-7-jdk, curl, git, rsync, ruby1.9.3, ruby1.9.1-dev
+Build-Depends: debhelper (>= 8.0.0), quilt, oracle-java7-jdk | openjdk-7-jdk, curl, git, rsync, ruby1.9.3, ruby1.9.1-dev, bundler, gem
 Standards-Version: 3.9.3
 Homepage: http://logstash.net
 #Vcs-Git: git://git.debian.org/collab-maint/logstash.git

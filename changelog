@@ -1,4 +1,4 @@
-logstash (1.4.2-1) wheezy; urgency=low
+logstash (1.4.2-1~ui60) unitix-60; urgency=low
 
   * Updated to 1.4.2
   * Updated integrated jruby to 1.7.13
