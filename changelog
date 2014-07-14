@@ -1,3 +1,9 @@
+logstash (1.4.2-2) wheezy; urgency=low
+
+  * Updated internal elasticsearch to 1.2.2
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Mon, 14 Jul 2014 09:58:25 +0200
+
 logstash (1.4.2-1) wheezy; urgency=low
 
   * Updated to 1.4.2
