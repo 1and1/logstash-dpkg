@@ -1,7 +1,5 @@
-Index: logstash/pkg/logstash-web.sysv.debian
-===================================================================
---- logstash.orig/pkg/logstash-web.sysv.debian	2014-06-06 15:36:24.861994296 +0200
-+++ logstash/pkg/logstash-web.sysv.debian	2014-06-06 15:38:04.216516774 +0200
+--- a/pkg/logstash-web.sysv.debian
++++ b/pkg/logstash-web.sysv.debian
 @@ -80,7 +80,7 @@
        log_daemon_msg "Starting $DESC"
  
@@ -29,10 +27,8 @@ Index: logstash/pkg/logstash-web.sysv.debian
        start-stop-daemon --test --start --pidfile "$PID_FILE" \
           --user "$LS_USER" --exec "$JAVA" \
        >/dev/null 2>&1
-Index: logstash/pkg/logstash.sysv.debian
-===================================================================
---- logstash.orig/pkg/logstash.sysv.debian	2014-06-06 15:36:24.845993906 +0200
-+++ logstash/pkg/logstash.sysv.debian	2014-06-06 15:38:33.769265824 +0200
+--- a/pkg/logstash.sysv.debian
++++ b/pkg/logstash.sysv.debian
 @@ -79,7 +79,7 @@
        log_daemon_msg "Starting $DESC"
  
