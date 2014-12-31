@@ -1,4 +1,4 @@
-logstash (1.4.2-7~ui60) wheezy; urgency=low
+logstash (1.4.2-7~ui60) unitix-60; urgency=low
 
   * Updated internal elasticsearch to 1.4.2
   * Updated integrated jruby to 1.7.18
