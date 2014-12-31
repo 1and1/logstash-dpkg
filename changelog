@@ -1,3 +1,10 @@
+logstash (1.4.2-7~ui60) wheezy; urgency=low
+
+  * Updated internal elasticsearch to 1.4.2
+  * Updated integrated jruby to 1.7.18
+
+ -- Andreas Wirooks <andreas.wirooks@1und1.de>  Wed, 31 Dec 2014 12:08:18 +0100
+
 logstash (1.4.2-6~ui60) unitix-60; urgency=low
 
   * Updated internal elasticsearch to 1.4.0
