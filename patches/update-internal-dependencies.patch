@@ -7,7 +7,7 @@
 -JRUBY_VERSION=1.7.11
 -ELASTICSEARCH_VERSION=1.1.1
 +JRUBY_VERSION=1.7.18
-+ELASTICSEARCH_VERSION=1.4.2
++ELASTICSEARCH_VERSION=1.5.2
  
  WITH_JRUBY=java -jar $(shell pwd)/$(JRUBY) -S
  JRUBY=vendor/jar/jruby-complete-$(JRUBY_VERSION).jar
@@ -16,7 +16,7 @@
  ELASTICSEARCH=vendor/jar/elasticsearch-$(ELASTICSEARCH_VERSION)
  TYPESDB=vendor/collectd/types.db
 -COLLECTD_VERSION=5.4.0
-+COLLECTD_VERSION=5.4.1
++COLLECTD_VERSION=5.4.2
  TYPESDB_URL=https://collectd.org/files/collectd-$(COLLECTD_VERSION).tar.gz
  GEOIP=vendor/geoip/GeoLiteCity.dat
  GEOIP_URL=http://logstash.objects.dreamhost.com/maxmind/GeoLiteCity-2013-01-18.dat.gz
